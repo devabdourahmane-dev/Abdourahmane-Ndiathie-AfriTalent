@@ -1,17 +1,963 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriTalent - Freelance</title>
-    <!-- Bootstrap 5 CDN css -->
-         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">  
-         <!-- lien vers le css -->
-         <link rel="stylesheet" href="css/style.css">
+    <title>AfriTalent - Freelances</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
+rel="stylesheet">
 </head>
+
 <body>
-    <!-- Bootstrap 5 CDN js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="logo">Afri</span>Talent</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="freelance.html">Freelances</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tarif.html">Tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <a href="#" class="btn btn-primary ms-3">Rejoindre</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- MAIN -->
+<main class="container my-5">
+
+    <!-- TITRE -->
+    <section class="text-center mb-5">
+        <h1>Découvrez nos freelances tech</h1>
+        <p>Trouvez les meilleurs talents africains</p>
+    </section>
+
+    <!-- FILTRES -->
+    <section class="mb-4 text-center">
+        <button class="btn btn-outline-primary m-1" data-bs-toggle="modal" data-bs-target="#modaltous">Tous</button>
+        <button class="btn btn-outline-primary m-1" data-bs-toggle="modal" data-bs-target="#modaldev">Développement Web</button>
+        <button class="btn btn-outline-primary m-1" data-bs-toggle="modal" data-bs-target="#modaldesign">Design UI/UX</button>
+        <button class="btn btn-outline-primary m-1" data-bs-toggle="modal" data-bs-target="#modalmarketing">Marketing</button>
+         <button class="btn btn-outline-primary m-1" data-bs-toggle="modal" data-bs-target="#modalData">Data</button>
+        
+    </section>
+</div>
+</nav>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li><a class="nav-link" href="index.html">Accueil</a></li>
+<li><a class="nav-link active" href="freelances.html">Freelances</a></li>
+<li><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+<li><a class="nav-link" href="about.html">À propos</a></li>
+<li><a class="nav-link" href="contact.html">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- MAIN -->
+<main class="container my-5">
+
+<div class="row">
+
+<!-- COPIEr CE MODELE 9 FOIS -->
+
+<div class="col-md-4 mb-4 ">
+<div class="card d-flex h-100 flex-column p-3">
+<img src="images/aminata (1).jpg" class="card-img-top">
+<div class="card-body text-center d-flex flex-column">
+<h5>Aminata Diallo</h5>
+<p>Développeuse Frontend</p>
+<p><strong>2500 FCFA/h</strong></p>
+<p>⭐⭐⭐⭐☆</p>
+
+<button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#profil1">
+Voir profil
+</button>
+
+</div>
+</div>
+</div>
+
+
+<div class="col-md-4 mb-4 ">
+<div class="card d-flex h-100 flex-column p-3">
+<img src="images/cadre (1).jpg" class="card-img-top">
+<div class="card-body text-center d-flex flex-column">
+<h5> Moussa Ndiaye</h5>
+<p >Developeur Backend</p>
+<p><strong>3000 FCFA/h</strong></p>
+<p>⭐⭐⭐⭐☆</p>
+
+<button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#profil2">
+Voir profil
+</button>
+
+</div>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="card d-flex h-100 flex-column p-3">
+<img src="images/good.jpg" class="card-img-top">
+<div class="card-body text-center d-flex flex-column">
+<h5> Fatou Sow</h5>
+<p >Design UI/UX</p>
+<p><strong>4000 FCFA/h</strong></p>
+<p>⭐⭐⭐⭐☆</p>
+
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#profil3">
+Voir profil
+</button>
+
+</div>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="card d-flex h-100 flex-column p-3">
+<img src="images/ibrahim.jpg" class="card-img-top">
+<div class="card-body text-center d-flex flex-column">
+<h5> Ibrahima Ba</h5>
+<p >Devops Engineer</p>
+<p><strong>3500 FCFA/h</strong></p>
+<p>⭐⭐⭐⭐☆</p>
+
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#profil4">
+Voir profil
+</button>
+
+</div>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="card d-flex h-100 flex-column p-3">
+<img src="images/falla.jpg" class="card-img-top">
+<div class="card-body text-center d-flex flex-column">
+<h5> Awa Diop</h5>
+<p >Marketing Digital</p>
+<p><strong>2200 FCFA/h</strong></p>
+<p>⭐⭐⭐⭐☆</p>
+
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#profil5">
+Voir profil
+</button>
+
+</div>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="card d-flex h-100 flex-column p-3">
+<img src="images/marcus.jpg" class="card-img-top">
+<div class="card-body text-center d-flex flex-column">
+<h5> Cheikh Fall</h5>
+<p >DAta Scientist </p>
+<p><strong>5000 FCFA/h</strong></p>
+<p>⭐⭐⭐⭐☆</p>
+
+<button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#profil6">
+Voir profil
+</button>
+
+</div>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="card d-flex h-100 flex-column p-3">
+<img src="images/francis.jpg" class="card-img-top">
+<div class="card-body text-center d-flex flex-column">
+<h5> Mariama Kane</h5>
+<p >Redactrice Tech</p>
+<p><strong>3300 FCFA/h</strong></p>
+<p>⭐⭐⭐⭐☆</p>
+
+<button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#profil7">
+Voir profil
+</button>
+
+</div>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="card d-flex h-100 flex-column p-3">
+<img src="images/OUSMANE.jpg" class="card-img-top">
+<div class="card-body text-center d-flex flex-column">
+<h5> Ousmane Sarr</h5>
+<p >Full Stack Developpeur </p>
+<p><strong>4500 FCFA/h</strong></p>
+<p>⭐⭐⭐⭐☆</p>
+
+<button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#profil8">
+Voir profil
+</button>
+
+</div>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="card d-flex h-100 flex-column p-3">
+<img src="images/christina.jpg" class="card-img-top">
+<div class="card-body text-center d-flex flex-column">
+<h5> Khadja Gueye </h5>
+<p >UI Designer</p>
+<p><strong>2800 FCFA/h</strong></p>
+<p>⭐⭐⭐⭐☆</p>
+
+<button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#profil9">
+Voir profil
+</button>
+
+</div>
+</div>
+</div>
+</div>
+</main>
+
+<!-- FOOTER -->
+ <footer class="bg-dark text-white py-5">
+
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <!-- Colonne 1 -->
+            <div class="col-md-6 col-lg-3">
+
+                <h3 class="h5">AfriTalent</h3>
+
+                <p>
+                    Plateforme africaine de mise en relation
+                    entre freelances tech et entreprises.
+                </p>
+
+            </div>
+
+            <!-- Colonne 2 -->
+            <div class="col-md-6 col-lg-3">
+
+                <h3 class="h5">Liens utiles</h3>
+
+                <ul class="list-unstyled">
+
+                    <li>
+                        <a href="index.html"
+                           class="text-white text-decoration-none">
+                            Accueil
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="freelance.html"
+                           class="text-white text-decoration-none">
+                            Freelances
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tarif.html"
+                           class="text-white text-decoration-none">
+                            Tarifs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html"
+                           class="text-white text-decoration-none">
+                            À propos
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Colonne 3 -->
+            <div class="col-md-6 col-lg-3">
+
+                <h3 class="h5">Ressources</h3>
+
+                <ul class="list-unstyled">
+
+                    <li>
+                        <a href="about.html"
+                           class="text-white text-decoration-none">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html"
+                           class="text-white text-decoration-none">
+                            Support
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tarif.html#faq"
+                           class="text-white text-decoration-none">
+                            FAQ
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Colonne 4 -->
+            <div class="col-md-6 col-lg-3">
+
+                <h3 class="h5">Contact</h3>
+
+                <p>📧 contact@afritalent.com</p>
+                <p>📞 +221 77 123 45 67</p>
+                <p>📍 Dakar, Sénégal</p>
+
+                <!-- Réseaux sociaux -->
+                <div class="d-flex gap-3 mt-3">
+
+                    <a href="https://www.instagram.com"
+                       class="text-white fs-5">
+
+                        <i class="bi bi-instagram"></i>
+
+                    </a>
+
+                    <a href="https://www.linkedin.com"
+                       class="text-white fs-5">
+
+                        <i class="bi bi-linkedin"></i>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center border-top mt-5 pt-3">
+
+            <p class="mb-0">
+                © 2026 AfriTalent — Tous droits réservés
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+  
+
+<!-- MODAL 1 -->
+ <div class="modal fade" id="modaldev">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Développement Web</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+          Le développement web consiste à créer des sites et applications web.
+          Les freelances utilisent HTML, CSS, JavaScript et des frameworks modernes
+          pour développer des solutions performantes.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modaltous">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Tous les freelances</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+          Découvrez l’ensemble de nos freelances qualifiés dans différents domaines :
+          développement, design, data, marketing et plus encore.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+ <div class="modal fade" id="modalmarketing">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Marketing Digital</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+          Le marketing digital permet d’améliorer la visibilité des entreprises
+          grâce au SEO, aux réseaux sociaux et aux campagnes publicitaires en ligne.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modaldesign">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Design UI/UX</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+          Le design UI/UX permet de créer des interfaces modernes et intuitives.
+          L’objectif est d’offrir une expérience utilisateur fluide et agréable.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+ <div class="modal fade" id="modalData">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Data & Intelligence Artificielle</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+          La data et l’IA permettent d’analyser des informations pour aider
+          les entreprises à prendre de meilleures décisions stratégiques.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="profil1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">Aminata Diallo</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+<div class="row">
+
+<div class="col-md-4">
+<img src="images/aminata (1).jpg" class="img-fluid rounded">
+</div>
+
+<div class="col-md-8">
+<p><strong>Métier :</strong> Développeuse Frontend</p>
+<p><strong>Tarif :</strong> 2500 FCFA/h</p>
+<p><strong>Note :</strong> ⭐⭐⭐⭐☆</p>
+
+<p><strong>Bio :</strong> Spécialiste React et UI modernes.</p>
+
+<ul>
+<li>HTML / CSS</li>
+<li>JavaScript</li>
+<li>React</li>
+<li>Bootstrap</li>
+</ul>
+
+<!-- BOUTONS -->
+<a href="https://wa.me/221771234567?text=Bonjour%20Aminata%2C%20je%20suis%20intéressé"
+class="btn btn-success" target="_blank">
+📲 WhatsApp
+</a>
+
+<button class="btn btn-secondary" data-bs-dismiss="modal">
+Fermer
+</button>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- modal 2 -->
+ <div class="modal fade" id="profil2">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">Moussa Ndiaye</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+<div class="row">
+
+<div class="col-md-4">
+<img src="images/cadre (1).jpg" class="img-fluid rounded">
+</div>
+
+<div class="col-md-8">
+<p><strong>Métier :</strong> Developer Backend</p>
+<p><strong>Tarif :</strong> 3000 FCFA/h</p>
+<p><strong>Note :</strong> ⭐⭐⭐⭐☆</p>
+
+<p><strong>Bio :</strong>Specialiste des API et des bases de données </p>
+
+<ul>
+<li>Node.js</li>
+<li>PHP</li>
+<li>MySQL</li>
+<li>API REST</li>
+</ul>
+
+<!-- BOUTONS -->
+<a href="https://www.linkedin.com" class="btn btn-success" target="_blank">
+📲 Linkedin
+</a>
+
+<button class="btn btn-secondary" data-bs-dismiss="modal">
+Fermer
+</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="profil3">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">Fatou Sow</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+<div class="row">
+
+<div class="col-md-4">
+<img src="images/good.jpg " class="img-fluid rounded">
+</div>
+
+<div class="col-md-8">
+<p><strong>Métier :</strong> Designer UI</p>
+<p><strong>Tarif :</strong> 4000 FCFA/h</p>
+<p><strong>Note :</strong> ⭐⭐⭐⭐☆</p>
+
+<p><strong>Bio :</strong>Création d'interfaces modernes et intuitives </p>
+
+<ul>
+<li>Figma</li>
+<li>Wireframing</li>
+<li>Adobe XD</li>
+<li>Prototypage</li>
+</ul>
+
+<!-- BOUTONS -->
+<a href="https://www.twitter.com" class="btn btn-success" target="_blank">
+📲 Twitter
+</a>
+
+<button class="btn btn-secondary" data-bs-dismiss="modal">
+Fermer
+</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="profil4">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">Ibrahima Ba</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+<div class="row">
+
+<div class="col-md-4">
+<img src="images/ibrahim.jpg" class="img-fluid rounded">
+</div>
+
+<div class="col-md-8">
+<p><strong>Métier :</strong> Devops Engineer</p>
+<p><strong>Tarif :</strong> 3500 FCFA/h</p>
+<p><strong>Note :</strong> ⭐⭐⭐⭐☆</p>
+
+<p><strong>Bio :</strong>Automation et deploiement cloud</p>
+
+<ul>
+<li>Docker</li>
+<li>AWS</li>
+<li>CI / CD</li>
+<li>Linux</li>
+</ul>
+
+<!-- BOUTONS -->
+<a href="https://www.linkedin.com" class="btn btn-success" target="_blank">
+📲 Linkedin
+</a>
+
+<button class="btn btn-secondary" data-bs-dismiss="modal">
+Fermer
+</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="profil5">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">Awa Diop</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+<div class="row">
+
+<div class="col-md-4">
+<img src="images/falla.jpg" class="img-fluid rounded">
+</div>
+
+<div class="col-md-8">
+<p><strong>Métier :</strong> Marketing Digital</p>
+<p><strong>Tarif :</strong> 2200 FCFA/h</p>
+<p><strong>Note :</strong> ⭐⭐⭐⭐☆</p>
+
+<p><strong>Bio :</strong>Experte en visibilité et strategies digitales </p>
+
+<ul>
+<li>SEO</li>
+<li>Google Ads</li>
+<li>Social Media</li>
+<li>Content Marketing</li>
+</ul>
+
+<!-- BOUTONS -->
+<a href="https://www.instagram.com" class="btn btn-success" target="_blank">
+📲 Instagram
+</a>
+
+<button class="btn btn-secondary" data-bs-dismiss="modal">
+Fermer
+</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="profil6">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">Cheikh Fall</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+<div class="row">
+
+<div class="col-md-4">
+<img src="images/marcus.jpg" class="img-fluid rounded">
+</div>
+
+<div class="col-md-8">
+<p><strong>Métier :</strong> Data Scientist</p>
+<p><strong>Tarif :</strong> 5000 FCFA/h</p>
+<p><strong>Note :</strong> ⭐⭐⭐⭐⭐</p>
+
+<p><strong>Bio :</strong>Analyse de données et intelligence artificielle </p>
+
+<ul>
+<li>Pandas</li>
+<li>Python</li>
+<li>Machine Learning</li>
+<li>DAta Visualisation</li>
+</ul>
+
+<!-- BOUTONS -->
+<a href="mailto:0oPZs@example.com" class="btn btn-success" target="_blank">
+📲 Email
+</a>
+
+<button class="btn btn-secondary" data-bs-dismiss="modal">
+Fermer
+</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="profil7">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">Mariama Kane</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+<div class="row">
+
+<div class="col-md-4">
+<img src="images/francis.jpg" class="img-fluid rounded">
+</div>
+
+<div class="col-md-8">
+<p><strong>Métier :</strong> Redactrice Tech</p>
+<p><strong>Tarif :</strong> 3300 FCFA/h</p>
+<p><strong>Note :</strong> ⭐⭐⭐⭐☆</p>
+
+<p><strong>Bio :</strong>Contenu technique et maitrise des outils </p>
+
+<ul>
+<li>SEO</li>
+<li>Copywriting</li>
+<li>Blogging</li>
+<li>Wordpress</li>
+</ul>
+
+<!-- BOUTONS -->
+<a href="https://www.facebook.com" class="btn btn-success" target="_blank">
+📲 Linkedin
+</a>
+
+<button class="btn btn-secondary" data-bs-dismiss="modal">
+Fermer
+</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="profil8">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">Ousmane Sarr</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+<div class="row">
+
+<div class="col-md-4">
+<img src="images/OUSMANE.jpg" class="img-fluid rounded">
+</div>
+
+<div class="col-md-8">
+<p><strong>Métier :</strong> Developpeur Fullstack</p>
+<p><strong>Tarif :</strong> 4500 FCFA/h</p>
+<p><strong>Note :</strong> ⭐⭐⭐⭐☆</p>
+
+<p><strong>Bio :</strong>Création d'applications web completes </p>
+
+<ul>
+<li>HTML/CSS</li>
+<li>JavaScript</li>
+<li>Node.js</li>
+<li>MOngoDB</li>
+</ul>
+
+<!-- BOUTONS -->
+<a href="https://www.linkedin.com" class="btn btn-success" target="_blank">
+📲 Linkedin
+</a>
+
+<button class="btn btn-secondary" data-bs-dismiss="modal">
+Fermer
+</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="profil9">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">Khadija GUEYE</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+<div class="row">
+
+<div class="col-md-4">
+<img src="images/christina.jpg" class="img-fluid rounded">
+</div>
+
+<div class="col-md-8">
+<p><strong>Métier :</strong> UI Designer</p>
+<p><strong>Tarif :</strong> 2800 FCFA/h</p>
+<p><strong>Note :</strong> ⭐⭐⭐⭐☆</p>
+
+<p><strong>Bio :</strong>Interfaces modernes et design creatif </p>
+
+<ul>
+<li>Figma</li>
+<li>Photoshop</li>
+<li>UI Design</li>
+<li>Branding</li>
+</ul>
+
+<!-- BOUTONS -->
+<a href="https://www.linkedin.com" class="btn btn-success" target="_blank">
+📲 Linkedin
+</a>
+
+<button class="btn btn-secondary" data-bs-dismiss="modal">
+Fermer
+</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
