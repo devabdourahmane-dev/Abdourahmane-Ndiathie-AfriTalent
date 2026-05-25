@@ -59,16 +59,16 @@ rel="stylesheet">
          <!--  Comment ça marche -- -->
           <section class="container py-5">
             <h2 class="text-center">Comment ça marche ?</h2>
-            <div class="row text-center mt-4">
-               <article class="col-md-4">
+            <div class="steps-grid mt-4">
+               <article>
                     <h3>1. Inscription</h3>
                     <p>Créez votre compte gratuitement.</p>
                 </article>
-                <article class="col-md-4">
+                <article>
                     <h3>2. Trouvez une mission</h3>
                     <p>Accédez aux meilleures opportunités.</p>
                 </article>
-                <article class="col-md-4">
+                <article>
                     <h3>3. Collaborez </h3>
                     <p>Travaillez efficacement avec les entreprises.</p>
                 </article>
@@ -78,30 +78,67 @@ rel="stylesheet">
               <section class="container py-5">
                 <h2 class="text-center">Catégories</h2>
                 <div class="row text-center mt-4">
-                        <article class="col-md-4">Développement Web </article>
-                        <article class="col-md-4">Design UI/UX</article>
-                        <article class="col-md-4"> Marketing Digital</article>
-                        <article class="col-md-4">Data & IA</article>
-                        <article class="col-md-4">Redaction Tech</article>
-                        <article class="col-md-4">DevOps & Cloud</article>
+                        <article class="col-md-4 category-card">Développement Web </article>
+                        <article class="col-md-4 category-card">Design UI/UX</article>
+                        <article class="col-md-4 category-card"> Marketing Digital</article>
+                        <article class="col-md-4 category-card">Data & IA</article>
+                        <article class="col-md-4 category-card">Redaction Tech</article>
+                        <article class="col-md-4 category-card">DevOps & Cloud</article>
                 </div>
               </section>
               <!-- Temoignages -->
                 <section id="Temoignages" class="container py-5">
                     <h2 class="text-center">Témoignages</h2>
-                    <div class="row text-center mt-4">
-                        <article class="col-md-4">
+                    <div id="testimonialCarousel"
+                    class="carousel slide mt-4"
+                    data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="text-center">
                             <p>"AfriTalent m'a permis de trouver des missions passionnantes et de collaborer avec des entreprises innovantes à travers l'Afrique."</p>
                             <h5>- Amina, Développeuse Web</h5>
-                        </article>
-                        <article class="col-md-4">
+                            </div>
+                        </div>
+                     </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <div class="text-center">
                             <p>"Grâce à AfriTalent, j'ai pu élargir mon réseau professionnel et trouver des talents exceptionnels pour mes projets."</p>
                             <h5>- Jean, Entrepreneur</h5>
-                        </article>
-                        <article class="col-md-4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <div class="text-center">
                             <p>"AfriTalent est la plateforme idéale pour les freelances tech en Afrique. J'ai trouvé des opportunités incroyables grâce à eux."</p>
                             <h5>- Fatou, Data Scientist</h5>
-                        </article>
+                            </div>  
+                        </div>
+                    </div>
+                    
+
+<button class="carousel-control-prev"
+type="button"
+data-bs-target="#testimonialCarousel"
+data-bs-slide="prev">
+
+    <span class="carousel-control-prev-icon"></span>
+
+</button>
+
+<button class="carousel-control-next"
+type="button"
+data-bs-target="#testimonialCarousel"
+data-bs-slide="next">
+
+    <span class="carousel-control-next-icon"></span>
+
+</button>
+
+</div>
+
                     </div>
                 </section>
                 <!-- Rejoignez-nous -->
