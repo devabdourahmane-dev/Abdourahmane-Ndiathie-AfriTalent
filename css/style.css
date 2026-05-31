@@ -266,7 +266,7 @@ h2::after {
 }
 
 /* responsive tablette */
-@media (min-width: 577px) (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 768px) {
     .hero {
         text-align: center;
         padding: 4rem 1.5rem;
@@ -350,6 +350,100 @@ body {
 
 .btn-outline-light:hover {
     background-color: white;
-    color: var(--secondary-co) 
-    
+    color: var(--secondary-color);
+} 
+/* DARK MODE */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .navbar {
+  background-color: #1a1a1a;
+}
+/* navbar */
+/* Navbar fixe */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+/* évite que le hero passe sous la navbar */
+body {
+    padding-top: 90px;
+}
+
+
+/* navbar au scroll */
+.navbar.scrolled {
+    background-color: rgba(255,255,255,0.98);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.20);
+    transition: all 0.3s ease;
+}
+/* BACK TO TOP */
+#backToTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+  /* Dark mode - cartes */
+.dark-mode .card,
+.dark-mode .category-card {
+    background-color: #1e293b;
+    color: white;
+}
+
+.dark-mode .card h3,
+.dark-mode .card h4,
+.dark-mode .card h5,
+.dark-mode .category-card h3,
+.dark-mode .category-card h4,
+.dark-mode .category-card h5,
+.dark-mode .card p,
+.dark-mode .category-card p {
+    color: white;
+}
+.dark-mode .category-card i {
+    color: var(--accent-color);
+}
+/* DARK MODE — correction texte cartes équipe + étapes */
+body.dark-mode .text-dark,
+body.dark-mode .text-muted,
+body.dark-mode .card-title,
+body.dark-mode .card-text,
+body.dark-mode .team-card h4,
+body.dark-mode .team-card p,
+body.dark-mode .steps-grid h3,
+body.dark-mode .steps-grid p {
+    color: white !important;
+}
+/* DARK MODE — section Comment ça marche */
+body.dark-mode .steps-grid article {
+    background-color: #1e293b;
+}
+body.dark-mode .badge.bg-light {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+}
+
+body.dark-mode .steps-grid article h3,
+body.dark-mode .steps-grid article p {
+    color: white !important;
 }
