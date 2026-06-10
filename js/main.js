@@ -133,3 +133,120 @@ const fadeObserver = new IntersectionObserver((entries) => {
 fadeSections.forEach(section => {
   fadeObserver.observe(section);
 });
+
+
+// COMMIT 8 : FILTRES FREELANCES
+
+const filterButtons = document.querySelectorAll(".filtre");
+const freelancerCards = document.querySelectorAll(".freelance-card");
+
+filterButtons.forEach(button => {
+  button.addEventListener("click", () => {
+
+    const category = button.dataset.categorie;
+
+    freelancerCards.forEach(card => {
+
+      if (
+        category === "all" ||
+        card.dataset.categorie === category
+      ) {
+        card.style.display = "flex";
+      } else {
+        card.style.display = "none";
+      }
+
+    });
+
+  });
+});
+
+const contactForm = document.getElementById("contactform");
+
+if (contactForm) {
+
+  contactForm.addEventListener("submit", (e) => {
+
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const prenom = document.getElementById("prenom").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const sujet = document.getElementById("sujet").value;
+    const message = document.getElementById("message").value.trim();
+
+    document.getElementById("nameError").textContent = "";
+    document.getElementById("prenomError").textContent = "";
+    document.getElementById("emailError").textContent = "";
+    document.getElementById("sujetError").textContent = "";
+    document.getElementById("messageError").textContent = "";
+
+    let isValid = true;
+
+    if (name === "") {
+      document.getElementById("nameError").textContent =
+        "Veuillez entrer votre nom";
+      isValid = false;
+    }
+
+    if (prenom === "") {
+      document.getElementById("prenomError").textContent =
+        "Veuillez entrer votre prénom";
+      isValid = false;
+    }
+
+  if (email === "") {
+
+  document.getElementById("emailError").textContent =
+    "Veuillez entrer votre email";
+
+  isValid = false;
+
+} else {
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailRegex.test(email)) {
+
+    document.getElementById("emailError").textContent =
+      "Veuillez entrer un email valide";
+
+    isValid = false;
+  }
+
+}
+
+    if (sujet === "") {
+      document.getElementById("sujetError").textContent =
+        "Veuillez choisir un sujet";
+      isValid = false;
+    }
+
+    if (message === "") {
+
+  document.getElementById("messageError").textContent =
+    "Veuillez écrire un message";
+
+  isValid = false;
+
+} else if (message.length < 20) {
+
+  document.getElementById("messageError").textContent =
+    "Le message doit contenir au moins 20 caractères";
+
+  isValid = false;
+
+}
+if (isValid) {
+
+  contactForm.reset();
+
+  document
+  .getElementById("successMessage")
+  .classList.remove("d-none");
+
+}
+
+  });
+
+}

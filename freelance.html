@@ -62,39 +62,22 @@ rel="stylesheet">
 
     <!-- FILTRES -->
     <section class="mb-4 text-center">
-        <button class="btn btn-outline-primary m-1" data-bs-toggle="modal" data-bs-target="#modaltous">Tous</button>
-        <button class="btn btn-outline-primary m-1" data-bs-toggle="modal" data-bs-target="#modaldev">Développement Web</button>
-        <button class="btn btn-outline-primary m-1" data-bs-toggle="modal" data-bs-target="#modaldesign">Design UI/UX</button>
-        <button class="btn btn-outline-primary m-1" data-bs-toggle="modal" data-bs-target="#modalmarketing">Marketing</button>
-         <button class="btn btn-outline-primary m-1" data-bs-toggle="modal" data-bs-target="#modalData">Data</button>
+        <button class="btn btn-outline-primary filtre" data-categorie="all">Tous</button>
+        <button class="btn btn-outline-primary filtre" data-categorie="dev">Développement Web</button>
+        <button class="btn btn-outline-primary filtre" data-categorie="design">Design UI/UX</button>
+        <button class="btn btn-outline-primary filtre" data-categorie="marketing">Marketing</button>
+         <button class="btn btn-outline-primary filtre" data-categorie="data">Data</button>
         
     </section>
-</div>
-</nav>
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-<span class="navbar-toggler-icon"></span>
-</button>
 
-<div class="collapse navbar-collapse" id="menu">
-<ul class="navbar-nav ms-auto">
-<li><a class="nav-link" href="index.html">Accueil</a></li>
-<li><a class="nav-link active" href="freelances.html">Freelances</a></li>
-<li><a class="nav-link" href="tarifs.html">Tarifs</a></li>
-<li><a class="nav-link" href="about.html">À propos</a></li>
-<li><a class="nav-link" href="contact.html">Contact</a></li>
-</ul>
-</div>
-</div>
-</nav>
 
-<!-- MAIN -->
-<main class="container my-5">
+    <!-- CARDS -->
 
-<div class="row">
 
 <!-- COPIEr CE MODELE 9 FOIS -->
+ <div class="row">
 
-<div class="col-12 col-md-6 col-lg-4 mb-4">
+<div class="col-12 col-md-6 col-lg-4 mb-4 freelance-card" data-categorie="dev">
 <div class="card d-flex h-100 flex-column p-3">
 <img src="images/aminata (1).jpg" class="card-img-top">
 <div class="card-body text-center d-flex flex-column">
@@ -112,7 +95,7 @@ Voir profil
 </div>
 
 
-<div class="col-12 col-md-6 col-lg-4 mb-4">
+<div class="col-12 col-md-6 col-lg-4 mb-4 freelance-card" data-categorie="dev">
 <div class="card d-flex h-100 flex-column p-3">
 <img src="images/cadre (1).jpg" class="card-img-top">
 <div class="card-body text-center d-flex flex-column">
@@ -129,7 +112,7 @@ Voir profil
 </div>
 </div>
 
-<div class="col-12 col-md-6 col-lg-4 mb-4">
+<div class="col-12 col-md-6 col-lg-4 mb-4 freelance-card" data-categorie="design">
 <div class="card d-flex h-100 flex-column p-3">
 <img src="images/good.jpg" class="card-img-top">
 <div class="card-body text-center d-flex flex-column">
@@ -146,7 +129,7 @@ Voir profil
 </div>
 </div>
 
-<div class="col-12 col-md-6 col-lg-4 mb-4">
+<div class="col-12 col-md-6 col-lg-4 mb-4 freelance-card" data-categorie="dev">
 <div class="card d-flex h-100 flex-column p-3">
 <img src="images/ibrahim.jpg" class="card-img-top">
 <div class="card-body text-center d-flex flex-column">
@@ -163,7 +146,7 @@ Voir profil
 </div>
 </div>
 
-<div class="col-12 col-md-6 col-lg-4 mb-4">
+<div class="col-12 col-md-6 col-lg-4 mb-4 freelance-card" data-categorie="marketing">
 <div class="card d-flex h-100 flex-column p-3">
 <img src="images/falla.jpg" class="card-img-top">
 <div class="card-body text-center d-flex flex-column">
@@ -180,7 +163,7 @@ Voir profil
 </div>
 </div>
 
-<div class="col-12 col-md-6 col-lg-4 mb-4">
+<div class="col-12 col-md-6 col-lg-4 mb-4 freelance-card" data-categorie="data">
 <div class="card d-flex h-100 flex-column p-3">
 <img src="images/marcus.jpg" class="card-img-top">
 <div class="card-body text-center d-flex flex-column">
@@ -197,7 +180,7 @@ Voir profil
 </div>
 </div>
 
-<div class="col-12 col-md-6 col-lg-4 mb-4">
+<div class="col-12 col-md-6 col-lg-4 mb-4 freelance-card" data-categorie="marketing">
 <div class="card d-flex h-100 flex-column p-3">
 <img src="images/francis.jpg" class="card-img-top">
 <div class="card-body text-center d-flex flex-column">
@@ -214,7 +197,7 @@ Voir profil
 </div>
 </div>
 
-<div class="col-12 col-md-6 col-lg-4 mb-4">
+<div class="col-12 col-md-6 col-lg-4 mb-4 freelance-card" data-categorie="dev">
 <div class="card d-flex h-100 flex-column p-3">
 <img src="images/OUSMANE.jpg" class="card-img-top">
 <div class="card-body text-center d-flex flex-column">
@@ -231,7 +214,7 @@ Voir profil
 </div>
 </div>
 
-<div class="col-12 col-md-6 col-lg-4 mb-4">
+<div class="col-12 col-md-6 col-lg-4 mb-4 freelance-card" data-categorie="design">
 <div class="card d-flex h-100 flex-column p-3">
 <img src="images/christina.jpg" class="card-img-top">
 <div class="card-body text-center d-flex flex-column">
@@ -247,6 +230,8 @@ Voir profil
 </div>
 </div>
 </div>
+
+
 </div>
 </main>
 
@@ -388,125 +373,6 @@ Voir profil
   
 
 <!-- MODAL 1 -->
- <div class="modal fade" id="modaldev">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h5 class="modal-title">Développement Web</h5>
-        <button class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <div class="modal-body">
-        <p>
-          Le développement web consiste à créer des sites et applications web.
-          Les freelances utilisent HTML, CSS, JavaScript et des frameworks modernes
-          pour développer des solutions performantes.
-        </p>
-      </div>
-
-      <div class="modal-footer">
-        <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-      </div>
-
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="modaltous">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h5 class="modal-title">Tous les freelances</h5>
-        <button class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <div class="modal-body">
-        <p>
-          Découvrez l’ensemble de nos freelances qualifiés dans différents domaines :
-          développement, design, data, marketing et plus encore.
-        </p>
-      </div>
-
-      <div class="modal-footer">
-        <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-      </div>
-
-    </div>
-  </div>
-</div>
- <div class="modal fade" id="modalmarketing">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h5 class="modal-title">Marketing Digital</h5>
-        <button class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <div class="modal-body">
-        <p>
-          Le marketing digital permet d’améliorer la visibilité des entreprises
-          grâce au SEO, aux réseaux sociaux et aux campagnes publicitaires en ligne.
-        </p>
-      </div>
-
-      <div class="modal-footer">
-        <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-      </div>
-
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="modaldesign">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h5 class="modal-title">Design UI/UX</h5>
-        <button class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <div class="modal-body">
-        <p>
-          Le design UI/UX permet de créer des interfaces modernes et intuitives.
-          L’objectif est d’offrir une expérience utilisateur fluide et agréable.
-        </p>
-      </div>
-
-      <div class="modal-footer">
-        <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-
- <div class="modal fade" id="modalData">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h5 class="modal-title">Data & Intelligence Artificielle</h5>
-        <button class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <div class="modal-body">
-        <p>
-          La data et l’IA permettent d’analyser des informations pour aider
-          les entreprises à prendre de meilleures décisions stratégiques.
-        </p>
-      </div>
-
-      <div class="modal-footer">
-        <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-      </div>
-
-    </div>
-  </div>
-</div>
 <div class="modal fade" id="profil1">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">

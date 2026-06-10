@@ -51,63 +51,96 @@ rel="stylesheet">
         <main class="container py-5">
             <section>
                 <h2 class="text-center mb-4">Nous contacter</h2>
-                <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Nom</label>
-                        <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
-                    </div>
-                    <div class="mb-3">
+              <form id="contactform" novalidate>
 
-    <label for="prenom"
-           class="form-label">
-        Prénom
-    </label>
+    <!-- Nom -->
+    <div class="mb-3">
+        <label for="name" class="form-label">Nom</label>
 
-    <input type="text"
-           class="form-control"
-           id="prenom"
-           placeholder="Votre prénom" required>
+        <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Votre nom"
+            required>
 
+        <div class="text-danger small" id="nameError"></div>
+    </div>
+
+    <!-- Prénom -->
+    <div class="mb-3">
+        <label for="prenom" class="form-label">Prénom</label>
+
+        <input
+            type="text"
+            class="form-control"
+            id="prenom"
+            placeholder="Votre prénom"
+            required>
+
+        <div class="text-danger small" id="prenomError"></div>
+    </div>
+
+    <!-- Email -->
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+
+        <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Votre email"
+            required>
+
+        <div class="text-danger small" id="emailError"></div>
+    </div>
+
+    <!-- Sujet -->
+    <div class="mb-3">
+        <label for="sujet" class="form-label">Sujet</label>
+
+        <select id="sujet" class="form-select" required>
+            <option value="" selected>
+                Choisissez un sujet
+            </option>
+
+            <option value="mission">
+                Demande de mission
+            </option>
+
+            <option value="support">
+                Support technique
+            </option>
+
+            <option value="partenariat">
+                Partenariat
+            </option>
+        </select>
+
+        <div class="text-danger small" id="sujetError"></div>
+    </div>
+
+    <!-- Message -->
+    <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+
+        <textarea
+            class="form-control"
+            id="message"
+            rows="5"
+            placeholder="Votre message"
+            required></textarea>
+
+        <div class="text-danger small" id="messageError"></div>
+    </div>
+<div id="successMessage" class="alert alert-success d-none mb-3">
+    ✅ Votre message a été envoyé avec succès !
 </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Votre email" required>
-                    </div>
-                    <div class="mb-3">
-                        <div class="mb-3">
+    <button type="submit" class="btn btn-primary">
+        Envoyer
+    </button>
 
-    <label for="sujet"
-           class="form-label">
-        Sujet
-    </label>
-
-    <select id="sujet"
-            class="form-select" required>
-
-        <option selected>
-            Choisissez un sujet
-        </option>
-
-        <option>
-            Demande de mission
-        </option>
-
-        <option>
-            Support technique
-        </option>
-
-        <option>
-            Partenariat
-        </option>
-
-    </select>
-
-</div>
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="5" placeholder="Votre message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Envoyer</button>
-                </form>
+</form>
             </section>
             <section>
     <h2 class="text-center mb-3">Notre localisation</h2>
