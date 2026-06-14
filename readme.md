@@ -32,16 +32,23 @@ Ce projet a été réalisé dans le cadre du projet de semestre 2.
 - Plans tarifaires
 - Formulaire de contact
 - Responsive design mobile / tablette / desktop
-
+- Mode sombre (Dark Mode) avec sauvegarde des préférences
+- Filtres par catégorie sur la page Freelances
+- Profils freelances détaillés via modales Bootstrap
+- FAQ interactive avec accordéon
+- Compteurs animés sur la page À propos
+- Validation JavaScript du formulaire de contact
+- Bouton retour en haut (Back To Top)
+- Animations au défilement (Fade-In)
 ---
 
 ## Structure du projet
 
-````bash
+``bash``
 AfriTalent/
 │── index.html
-│── freelances.html
-│── tarifs.html
+│── freelance.html
+│── tarif.html
 │── about.html
 │── contact.html
 │
@@ -56,3 +63,5 @@ AfriTalent/
 ├── docs/
 │
 └── README.md
+
+

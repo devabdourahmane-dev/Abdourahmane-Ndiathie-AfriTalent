@@ -13,32 +13,33 @@ if (localStorage.getItem("theme") === "dark") {
     themeIcon.style.transform = "rotate(180deg)";
   }
 }
+// Toggle dark mode on click
 
 if (themeToggle) {
   themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
 
-   if (document.body.classList.contains("dark-mode")) {
-  localStorage.setItem("theme", "dark");
+    if (document.body.classList.contains("dark-mode")) {
+      localStorage.setItem("theme", "dark");
 
 
-  if (themeIcon) {
-  themeIcon.style.transform = "rotate(180deg)";
+      if (themeIcon) {
+        themeIcon.style.transform = "rotate(180deg)";
 
-  themeIcon.classList.remove("bi-moon-fill");
-  themeIcon.classList.add("bi-sun-fill");
-}
+        themeIcon.classList.remove("bi-moon-fill");
+        themeIcon.classList.add("bi-sun-fill");
+      }
 
-} else {
-  localStorage.setItem("theme", "light");
+    } else {
+      localStorage.setItem("theme", "light");
 
-if (themeIcon) {
-  themeIcon.style.transform = "rotate(0deg)";
+      if (themeIcon) {
+        themeIcon.style.transform = "rotate(0deg)";
 
-  themeIcon.classList.remove("bi-sun-fill");
-  themeIcon.classList.add("bi-moon-fill");
-}
-}
+        themeIcon.classList.remove("bi-sun-fill");
+        themeIcon.classList.add("bi-moon-fill");
+      }
+    }
   });
 }
 
@@ -74,7 +75,11 @@ if (backToTop) {
     });
   });
 }
-// COMPTEURS ANIMÉS
+const year = document.getElementById("year");
+
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
 // COMPTEURS ANIMÉS
 const counters = document.querySelectorAll(".counter");
 
@@ -102,6 +107,7 @@ const startCounters = () => {
     updateCounter();
   });
 };
+// Démarrer les compteurs lorsque la section devient visible
 
 const statsSection = document.querySelector(".counter")?.closest("section");
 
@@ -136,7 +142,7 @@ fadeSections.forEach(section => {
 
 
 // COMMIT 8 : FILTRES FREELANCES
-
+// Filtrer les freelances par catégorie
 const filterButtons = document.querySelectorAll(".filtre");
 const freelancerCards = document.querySelectorAll(".freelance-card");
 
@@ -160,7 +166,7 @@ filterButtons.forEach(button => {
 
   });
 });
-
+// VALIDATION FORMULAIRE DE CONTACT
 const contactForm = document.getElementById("contactform");
 
 if (contactForm) {
@@ -195,26 +201,26 @@ if (contactForm) {
       isValid = false;
     }
 
-  if (email === "") {
+    if (email === "") {
 
-  document.getElementById("emailError").textContent =
-    "Veuillez entrer votre email";
+      document.getElementById("emailError").textContent =
+        "Veuillez entrer votre email";
 
-  isValid = false;
+      isValid = false;
 
-} else {
+    } else {
 
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  if (!emailRegex.test(email)) {
+      if (!emailRegex.test(email)) {
 
-    document.getElementById("emailError").textContent =
-      "Veuillez entrer un email valide";
+        document.getElementById("emailError").textContent =
+          "Veuillez entrer un email valide";
 
-    isValid = false;
-  }
+        isValid = false;
+      }
 
-}
+    }
 
     if (sujet === "") {
       document.getElementById("sujetError").textContent =
@@ -224,28 +230,33 @@ if (contactForm) {
 
     if (message === "") {
 
-  document.getElementById("messageError").textContent =
-    "Veuillez écrire un message";
+      document.getElementById("messageError").textContent =
+        "Veuillez écrire un message";
 
-  isValid = false;
+      isValid = false;
 
-} else if (message.length < 20) {
+    } else if (message.length < 20) {
 
-  document.getElementById("messageError").textContent =
-    "Le message doit contenir au moins 20 caractères";
+      document.getElementById("messageError").textContent =
+        "Le message doit contenir au moins 20 caractères";
 
-  isValid = false;
+      isValid = false;
 
-}
-if (isValid) {
+    }
+    if (isValid) {
 
-  contactForm.reset();
+      contactForm.reset();
 
+      document
+        .getElementById("successMessage")
+        .classList.remove("d-none");
+        setTimeout(() => {
   document
-  .getElementById("successMessage")
-  .classList.remove("d-none");
+    .getElementById("successMessage")
+    .classList.add("d-none");
+}, 5000);
 
-}
+    }
 
   });
 
