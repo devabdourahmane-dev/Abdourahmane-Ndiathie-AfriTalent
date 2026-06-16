@@ -61,7 +61,50 @@ AfriTalent/
 ├── images/
 │
 ├── docs/
+ └── Ndiathie_Abdourahmane_Présentation.pptx
 │
 └── README.md
+└── .gitignore
 
 
+
+## Démo en ligne
+
+Site accessible ici :
+
+https://devabdourahmane-dev.github.io/Abdourahmane-Ndiathie-AfriTalent/
+
+## Aperçu du site
+
+![Page d'accueil AfriTalent](images/capture_accueil.png)
+
+
+![Page de freelance AfriTalent](images/capture_freelance.png)
+
+
+![Page A propos AfriTalent](images/capture_about.png)
+
+
+![Page de tarif AfriTalent](images/capture_tarif.png)
+
+
+![Page de contact AfriTalent](images/capture_contact.png)
+---
+
+## Auteur
+
+Abdourahmane Ndiathie
+
+Étudiant en Licence 1 DSBD à l'Institut Supérieur d'Informatique (ISI).
+
+Projet réalisé dans le cadre du projet fil rouge de Développement Web – Semestre 2.
+
+---
+
+## Lancement du projet
+
+1. Télécharger ou cloner le projet
+2. Ouvrir le dossier dans Visual Studio Code
+3. Lancer `index.html` avec Live Server/default browser
+
+Aucune installation supplémentaire n'est nécessaire.

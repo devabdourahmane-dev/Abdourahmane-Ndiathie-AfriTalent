@@ -130,6 +130,7 @@ const fadeObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
+      fadeObserver.unobserve(entry.target);
     }
   });
 }, {
@@ -250,11 +251,11 @@ if (contactForm) {
       document
         .getElementById("successMessage")
         .classList.remove("d-none");
-        setTimeout(() => {
-  document
-    .getElementById("successMessage")
-    .classList.add("d-none");
-}, 5000);
+      setTimeout(() => {
+        document
+          .getElementById("successMessage")
+          .classList.add("d-none");
+      }, 5000);
 
     }
 
